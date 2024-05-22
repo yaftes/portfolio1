@@ -4,16 +4,17 @@ body, html {
     font-family: Arial, sans-serif;
     scroll-behavior: smooth;
     background-color: black;
+    color: white;
+    box-sizing: border-box;
 }
 
 .content {
-    padding: 50px;
+    width: 100%;
 }
 
 section {
     height: 100vh;
     padding: 20px;
-    border-bottom: 1px solid #ccc;
 }
 
 .section-pointer {
@@ -47,11 +48,12 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #333;
+    background-color:transparent;
     padding: 10px 0;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
+    padding:20px 15px;
 }
 
 nav ul {
@@ -78,7 +80,7 @@ nav ul li a::after {
     content: '';
     width: 0%;
     height: 3px;
-    background: yellow;
+    background: rgb(193, 72, 72);
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -91,6 +93,49 @@ nav ul li a:hover::after {
 
 
 .content {
-    padding: 50px;
-    padding-top: 60px; /* Add padding to avoid content being hidden under fixed nav */
+     /* Add padding to avoid content being hidden under fixed nav */
+}
+
+
+/******* first section *******/
+#section1 {
+    background-image: url(images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+
+}
+#section1 div{
+    text-align: center;
+}
+#section1 div h2 {
+    margin-top: 150px;
+}
+#section1 div div {
+    margin: 30px;
+    letter-spacing: 0.4cm;
+    display: inline-block;
+    border: 2px solid rgb(193, 72, 72);
+    padding: 25px;
+    font-weight: bold;
+    font-size: 24px;
+}
+#section1 div p {
+    color:rgb(192, 180, 159);
+    margin: 50px 0;
+}
+#section1 div button {
+    color: white;
+    padding: 15px 25px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+#section1 div button:hover {
+    background-color:rgb(193, 72, 72) ;
+    border: none;
+    transition: 0.5s;
 }
